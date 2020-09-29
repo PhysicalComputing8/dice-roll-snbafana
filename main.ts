@@ -69,6 +69,9 @@ function Roll () {
             `)
     }
 }
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
+})
 let roll = 0
 radio.setGroup(1)
 radio.sendNumber(0)
